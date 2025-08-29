@@ -1,0 +1,23 @@
+[package]
+name = "boost_numeric_conversion"
+description = "Boost C++ library boost_numeric_conversion packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_numeric_conversion"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_numeric_conversion"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_conversion = { version = "0.1.0", path = "../boost_conversion" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
